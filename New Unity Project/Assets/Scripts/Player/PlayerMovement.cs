@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (m_HorizontalMovement != 0 || m_VerticalMovement != 0)
         {
-            m_Animator.SetBool("Moving", false);
+            m_Animator.SetBool("Moving", true);
             m_MoveDirection = new Vector3(m_HorizontalMovement, 0.0f, m_VerticalMovement);
 
             m_Rb.MovePosition(transform.position + m_MoveDirection * m_MoveSpeed * Time.fixedDeltaTime);
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            m_Animator.SetBool("Moving", true);
+            m_Animator.SetBool("Moving", false);
         }
     }
 }
