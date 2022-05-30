@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4976116880164980}
   - component: {fileID: 33622812890426986}
   - component: {fileID: 23302638508090834}
+  - component: {fileID: 5079078503325248731}
+  - component: {fileID: 8963760957613787871}
   m_Layer: 0
   m_Name: SM_Prop_Samurai_Shrine_01
   m_TagString: Untagged
@@ -82,3 +84,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5079078503325248731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264291507251104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24776612, y: 0.6090734, z: 0.24776632}
+  m_Center: {x: 0.00000015646219, y: 0.3045367, z: -0.000000074505806}
+--- !u!208 &8963760957613787871
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264291507251104}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.124000005, y: 0.305, z: 0.124000005}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.305, z: 0}
+  m_TimeToStationary: 0.5

@@ -6,7 +6,7 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c6c111b07142f1f2b233e2867083debf42d
+      value: 224247031146466b020215251f2d7219181e270c2d2632313e305217e7ed3b77c6e23be6d8192a3e3c3dca2405331133f7441c05ff1f13
       flags: 0
     RecentlyUsedScenePath-1:
       value: 224247031146466b020215251f2d7219181e3e2b223c2723340a1532f0e1372ce7f525a6d4393a323c11a01801330e71e704001fef
@@ -15,6 +15,9 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c7e1b1f5739242525272424261320acf53a31f6fe
       flags: 0
     RecentlyUsedScenePath-3:
+      value: 22424703114646680e0b0227036c721106590d24253c3f
+      flags: 0
+    RecentlyUsedScenePath-4:
       value: 22424703114646680e0b0227036c6c0413111924623d28393930
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:

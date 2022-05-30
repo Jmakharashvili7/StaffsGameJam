@@ -14,6 +14,7 @@ public class FollowCam : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(CamTarget.transform.position.x, CamTarget.transform.position.y + KeepDistanceY, CamTarget.transform.position.z + KeepDistanceZ);
+        transform.rotation = Quaternion.Euler(TiltRotation, 0.0f, 0.0f);
     }
 
     // Update is called once per frame
