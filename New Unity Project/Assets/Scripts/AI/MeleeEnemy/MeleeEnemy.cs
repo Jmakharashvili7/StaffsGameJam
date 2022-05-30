@@ -17,7 +17,5 @@ public class MeleeEnemy : EnemyAI
     public override void Update()
     {
         base.Update();
-
-        Debug.Log(m_state.ToString());
     }
 }
