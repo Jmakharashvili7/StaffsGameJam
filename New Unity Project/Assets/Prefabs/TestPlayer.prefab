@@ -8055,6 +8055,8 @@ GameObject:
   - component: {fileID: 7772338191117415817}
   - component: {fileID: 7772338191117415822}
   - component: {fileID: 7772338191117415818}
+  - component: {fileID: 8872975691338481226}
+  - component: {fileID: 2129938477888955833}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Untagged
@@ -8200,6 +8202,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RotateRate: 0.35
   m_MoveSpeed: 10
+--- !u!114 &8872975691338481226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773056366740677893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee0fdcf790817c4b957bc1279e001ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
+  regenHealth: 0
+  armor: 0
+  lifeSteal: 0
+  maxMana: 10
+  regenMana: 0
+  ablityDamage: 0
+  attackDamage: 3
+  attackSpeed: 1
+  critChance: 0
+  critDamage: 0
+  movementSpeed: 10
+  dodgeChance: 0
+  luck: 0
+--- !u!114 &2129938477888955833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773056366740677893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c7d965d67985846bc2473b5a6254b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  regenHealth: 0
+  armor: 0
+  dodgeChance: 0
+  luck: 0
 --- !u!1 &7773062535170452785
 GameObject:
   m_ObjectHideFlags: 0
