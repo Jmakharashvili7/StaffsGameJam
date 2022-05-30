@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody m_Rb;
 
+    Animator m_Animator;
+
     Vector3 m_MoveDirection;
 
     float m_HorizontalMovement;
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         m_Rb = gameObject.GetComponent<Rigidbody>();
+        m_Animator = gameObject.GetComponent<Animator>();
         m_MoveDirection = new Vector3();
     }
 
@@ -31,10 +34,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (m_HorizontalMovement != 0 || m_VerticalMovement != 0)
         {
+            m_Animator.SetBool("Moving", true);
             m_MoveDirection = new Vector3(m_HorizontalMovement, 0.0f, m_VerticalMovement);
 
             m_Rb.MovePosition(transform.position + m_MoveDirection * m_MoveSpeed * Time.fixedDeltaTime);
             m_Rb.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(m_MoveDirection.normalized), m_RotateRate);
+        }
+        else
+        {
+            m_Animator.SetBool("Moving", false);
         }
     }
 }
