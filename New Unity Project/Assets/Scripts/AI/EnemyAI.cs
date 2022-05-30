@@ -5,27 +5,27 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] protected float m_health;
+    [SerializeField] protected float m_health = 3;
     public float Health
     {
         get { return m_health; }
         set { m_health = value; }
     }
 
-    [SerializeField] protected float m_Speed;
+    [SerializeField] protected float m_Speed = 3;
     public float Speed
     {
         get { return m_Speed; }
         set { m_Speed = value; }
     }
 
-    [SerializeField] protected float m_AttackRate;
+    [SerializeField] protected float m_AttackRate = 1.0f;
     public float AttackRate
     {
         get { return m_AttackRate; }
     }
 
-    [SerializeField] protected float m_AttackRange;
+    [SerializeField] protected float m_AttackRange = 1.0f;
     public float AttackRange
     {
         get { return m_AttackRange; }
@@ -39,7 +39,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     [SerializeField] protected Material m_deathMaterial;
-    [SerializeField] protected float m_fadeTime;
+    [SerializeField] protected float m_fadeTime = 1.25f;
     protected bool m_fading = false;
     protected NavMeshAgent m_agent;
 
@@ -78,6 +78,12 @@ public class EnemyAI : MonoBehaviour
     // Set destination for the nav mesh
     public void SetDestination(Vector3 destination)
     {
+        m_agent.isStopped = false;
         m_agent.SetDestination(destination);
+    }
+
+    public void StopMoving()
+    {
+        m_agent.isStopped = true;
     }
 }
