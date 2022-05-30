@@ -4921,7 +4921,7 @@ GameObject:
   - component: {fileID: 4790120506720763231}
   - component: {fileID: 2236887075766799518}
   m_Layer: 0
-  m_Name: Glow (1)
+  m_Name: Core Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14506,7 +14506,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 2
+  m_RenderAlignment: 1
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_UseCustomVertexStreams: 0
@@ -15925,7 +15925,7 @@ ParticleSystem:
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
+        ctime0: 34310
         ctime1: 65535
         ctime2: 0
         ctime3: 0
