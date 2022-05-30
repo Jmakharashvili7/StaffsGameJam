@@ -19,10 +19,6 @@ public class Hud : MonoBehaviour
     [SerializeField]
     TMP_Text currentManaTxt;
     [SerializeField]
-    TMP_Text currentLevelTxt;
-    [SerializeField]
-    Image experienceBar;
-    [SerializeField]
     Image healthBar;
     [SerializeField]
     Image manaBar;
