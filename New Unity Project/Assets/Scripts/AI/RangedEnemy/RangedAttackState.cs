@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RangedAttackState : RangedEnemyState
 {
+    float m_attackTimer;
+
     public RangedAttackState(RangedEnemyAI enemy)
     {
         Enemy = enemy;
@@ -14,21 +16,25 @@ public class RangedAttackState : RangedEnemyState
     {
         float distance = Vector3.Distance(m_player.transform.position, Enemy.transform.position);
 
+        m_attackTimer += Time.deltaTime;
+        Enemy.transform.LookAt(m_player.transform.position);
+
         if (distance > Enemy.AttackRange)
         {
             Enemy.SetDestination(m_player.transform.position);
         }
+        else if (distance <= Enemy.DangerDistance)
+        {
+            Enemy.SetDestination(Enemy.transform.position + Enemy.transform.forward * -1);
+        }
         else if (distance <= Enemy.AttackRange)
         {
-            Vector3 dir = Enemy.transform.position - m_player.transform.position;
-            dir.Normalize();
-            Enemy.Shoot(dir);
-        }
-
-        if (distance <= Enemy.DangerDistance)
-        {
-            Vector3 runAway = Enemy.transform.position - m_player.transform.position.normalized;
-            Enemy.SetDestination(runAway);
+            if (m_attackTimer >= Enemy.AttackRate)
+            {
+                Enemy.StopMoving();
+                Enemy.Shoot();
+                m_attackTimer = 0.0f;
+            }
         }
     }
 }

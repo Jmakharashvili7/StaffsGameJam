@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class RangedEnemyAI : EnemyAI
 {
-    [SerializeField] protected float m_TargetRange;
+    [SerializeField] protected float m_TargetRange = 10.0f;
     public float TargetRange
     {
         get { return m_TargetRange; }
         set { m_TargetRange = value; }
     }
 
-    [SerializeField] protected float m_DangerDistance;
+    [SerializeField] protected float m_DangerDistance = 5.0f;
     public float DangerDistance
     {
         get { return m_DangerDistance; }
@@ -19,7 +19,7 @@ public class RangedEnemyAI : EnemyAI
     }
 
     [SerializeField] protected GameObject m_ProjectilePrefab;
-    [SerializeField] protected float m_FiringForce;
+    [SerializeField] protected float m_FiringForce = 3.0f;
 
     public override void Start()
     {
@@ -32,10 +32,11 @@ public class RangedEnemyAI : EnemyAI
         base.Update();
     }
 
-    public void Shoot(Vector3 dir)
+    public void Shoot()
     {
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        GameObject temp = Instantiate(m_ProjectilePrefab, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
-        temp.GetComponent<Rigidbody>().AddForce(dir * m_FiringForce, ForceMode.Force);
+        Rigidbody temp = Instantiate(m_ProjectilePrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+
+        temp.AddForce(transform.up * 8, ForceMode.Impulse);
+        temp.AddForce(transform.forward * 32f, ForceMode.Impulse);
     }
 }
