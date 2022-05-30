@@ -105,7 +105,7 @@ MonoBehaviour:
   m_deathMaterial: {fileID: 2100000, guid: 3b59a0d7721c11443ba361f6a04d7813, type: 2}
   m_fadeTime: 1.25
   m_TargetRange: 10
-  m_DangerDistance: 5
+  m_DangerDistance: 3
   m_ProjectilePrefab: {fileID: 5937176568730274169, guid: fed01c5760593824895cbdfda7a2b1dc, type: 3}
   m_FiringForce: 20
 --- !u!195 &7327875974173251146

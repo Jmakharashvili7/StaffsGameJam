@@ -25,7 +25,7 @@ public class RangedAttackState : RangedEnemyState
         }
         else if (distance <= Enemy.DangerDistance)
         {
-            Enemy.SetDestination(Enemy.transform.forward * -1);
+            Enemy.SetDestination(Enemy.transform.position + Enemy.transform.forward * -1);
         }
         else if (distance <= Enemy.AttackRange)
         {
