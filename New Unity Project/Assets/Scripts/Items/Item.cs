@@ -8,11 +8,20 @@ public enum ItemType
     Chestplate,
     Leggings,
     Boots,
-    Bracelet,
+    Ring,
     Belt,
-    Shoulder,
+    Neck,
     Weapon,
     Spell
+}
+
+public enum Rarity
+{
+    Common,
+    Uncommon,
+    Rare,
+    Epic,
+    Legendary
 }
 
 [CreateAssetMenu(fileName = "New Item")]
@@ -24,6 +33,7 @@ public class Item : ScriptableObject
     public Sprite icon;
 
     public ItemType itemType;
+    public Rarity rarity;
 
 
     [Header("Health")]

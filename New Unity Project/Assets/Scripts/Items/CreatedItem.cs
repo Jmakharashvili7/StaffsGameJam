@@ -21,8 +21,6 @@ public class CreatedItem : MonoBehaviour
     Image icon;
     [SerializeField]
     TMP_Text bonus;
-    [SerializeField]
-    ItemType itemtype;
 
     public void TakeItem()
     {
@@ -43,6 +41,37 @@ public class CreatedItem : MonoBehaviour
         name.text = item.name;
         icon.sprite = item.icon;
         bonus.text = item.bonus;
-        itemtype = item.itemType;
+        UpdateItemColor();
+    }
+    void UpdateItemColor()
+    {
+        switch(item.rarity)
+        {
+            case Rarity.Common:
+                name.color = Color.white;
+                break;
+            case Rarity.Uncommon:
+                name.color = Color.green;
+                break;
+            case Rarity.Rare:
+                name.color = Color.blue;
+                break;
+            case Rarity.Epic:
+                name.color = Color.magenta;
+                break;
+            case Rarity.Legendary:
+                name.color = Color.yellow;
+                break;
+            default:
+                name.color = Color.gray;
+                break;
+        }
+    }
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            UpdateItemUI();
+        }
     }
 }
