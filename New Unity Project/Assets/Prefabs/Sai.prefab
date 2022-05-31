@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9207308909456361253}
   - component: {fileID: 6522504654406907388}
   - component: {fileID: 3108599037423824313}
+  - component: {fileID: 8540098951465083606}
   m_Layer: 0
   m_Name: Sai
   m_TagString: Untagged
@@ -134,3 +135,15 @@ CapsuleCollider:
   m_Height: 1.196625
   m_Direction: 1
   m_Center: {x: 0.0000006109476, y: 0.3832239, z: 0.0000003054738}
+--- !u!114 &8540098951465083606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120095253524708381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c59af5ac2091304292a5ec80bdb8121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

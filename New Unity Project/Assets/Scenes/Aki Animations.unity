@@ -358,6 +358,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1147107144}
+  - component: {fileID: 1147107145}
   m_Layer: 0
   m_Name: FireOrb
   m_TagString: Untagged
@@ -377,8 +378,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1980356015}
-  m_RootOrder: 63
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1147107145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147107143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03743609ab4f9c4a87d6559834ab930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_WeaponPrefab: {fileID: 5621555389259982441, guid: 888fd9eed47f1f44b963161ba692c537, type: 3}
+  m_CoolDown: 5
 --- !u!1 &1758955320
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,6 +512,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 878509535473185494, guid: 47491cf6aa10d064aa9b35efdf8cb030, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 878509536048784265, guid: 47491cf6aa10d064aa9b35efdf8cb030, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 878509536048784267, guid: 47491cf6aa10d064aa9b35efdf8cb030, type: 3}
       propertyPath: m_CoolDown
       value: 2
@@ -549,7 +572,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 878509535937671458, guid: 47491cf6aa10d064aa9b35efdf8cb030, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47491cf6aa10d064aa9b35efdf8cb030, type: 3}
 --- !u!1 &1980356005 stripped
 GameObject:

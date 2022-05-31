@@ -29,28 +29,31 @@ public class ProjectileMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Hit Something");
-        speed = 0;
-
-        ContactPoint contact = collision.contacts[0];
-        Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
-        Vector3 pos = contact.point;
-
-        if (hitPrefab != null)
+        if (collision.gameObject.tag != "Weapon")
         {
-            var hitFX = Instantiate(hitPrefab, transform.position, Quaternion.identity);
-            var psHit = hitFX.GetComponent<ParticleSystem>();
-            if (psHit != null)
-            {
-                Destroy(hitFX, psHit.main.duration);
-            }
-            else
-            {
-                var psChild = hitFX.transform.GetChild(0).GetComponent<ParticleSystem>();
-                Destroy(hitFX, psChild.main.duration);
-            }
-        }
+            Debug.Log("Hit Something");
+            speed = 0;
 
-        Destroy(gameObject);
+            ContactPoint contact = collision.contacts[0];
+            Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
+            Vector3 pos = contact.point;
+
+            if (hitPrefab != null)
+            {
+                var hitFX = Instantiate(hitPrefab, transform.position, Quaternion.identity);
+                var psHit = hitFX.GetComponent<ParticleSystem>();
+                if (psHit != null)
+                {
+                    Destroy(hitFX, psHit.main.duration);
+                }
+                else
+                {
+                    var psChild = hitFX.transform.GetChild(0).GetComponent<ParticleSystem>();
+                    Destroy(hitFX, psChild.main.duration);
+                }
+            }
+
+            Destroy(gameObject);
+        }
     }
 }
