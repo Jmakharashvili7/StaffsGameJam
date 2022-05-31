@@ -1745,6 +1745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3324,6 +3328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -4009,6 +4017,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (86)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -5690,6 +5702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -6146,6 +6162,10 @@ PrefabInstance:
     - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
@@ -6683,6 +6703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -6877,6 +6901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -7057,6 +7085,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -9731,8 +9763,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8158277785198956563, guid: e36d3c8f6a693894c8d445331c61d23d, type: 3}
+  - {fileID: 7292837937114651639, guid: 0e6b6fcfc7635dc4d900efac96c8f8e2, type: 3}
   m_spawnRate: 1
 --- !u!1001 &594075613
 PrefabInstance:
@@ -10435,6 +10467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -10650,6 +10686,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -11520,6 +11560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -11694,6 +11738,10 @@ PrefabInstance:
     - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
@@ -12422,6 +12470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -12803,6 +12855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -13131,8 +13187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6457832393385687792, guid: 069b12f70094af94a850acdea3306601, type: 3}
+  - {fileID: 557028229925829665, guid: ffc5f90e69f8c3740a40170c2317d0b6, type: 3}
   m_spawnRate: 1
 --- !u!1001 &834566614
 PrefabInstance:
@@ -15054,6 +15110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
       value: 93
@@ -16937,6 +16997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -17363,13 +17427,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9282ef43d970643a18fba92a191eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemyCount: 0500000005000000140000001400000014000000
+  m_enemyCount: 0a000000140000001e0000002800000032000000
   m_waveDuration:
-  - 5
-  - 5
-  - 10
-  - 10
-  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - 60
   m_Elite: {fileID: 1542892657898651740, guid: 2055a0327aa81234f949580fa4a897cb, type: 3}
   m_MiniBoss: {fileID: 7888704462931805780, guid: 3ece6614a91d3fa4baa57af96697952c, type: 3}
   m_Boss: {fileID: 6852256410767800578, guid: 46b44eb31e2c7b24e92f808d91cf17f1, type: 3}
@@ -20089,6 +20153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
       value: 97
@@ -20757,6 +20825,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -21936,6 +22008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -22445,8 +22521,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_enemyPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4773415902897273388, guid: b6d5d060034fbe74b9fb3942e8383e9b, type: 3}
+  - {fileID: 8115284151413762907, guid: 21b095c494bb7dc489a5682956123ff4, type: 3}
   m_spawnRate: 1
 --- !u!1 &1344861360
 GameObject:
@@ -23790,6 +23866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -24407,6 +24487,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -25633,6 +25717,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -27952,6 +28040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -28452,6 +28544,10 @@ PrefabInstance:
     - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
@@ -29867,6 +29963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_Water_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1464038009950966, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4252068922481608, guid: 0dbd42f4d781d794a840c663af79f585, type: 3}
       propertyPath: m_RootOrder
       value: 92
@@ -30478,6 +30578,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
@@ -31806,6 +31910,10 @@ PrefabInstance:
     - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_Name
       value: SM_Tile_Hex_Flat_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833719475002058, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4636230886128812, guid: f610f1f30b970024b86dcc1a05308bc8, type: 3}
       propertyPath: m_RootOrder
