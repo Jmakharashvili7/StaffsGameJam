@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
     public event EventHandler OnUpdateHealth;
     public event EventHandler OnUpdateValues;
 
+    [SerializeField]
+    float damageImunityTime;
+
     Stats stats;
     public int maxHealth;
     public int currentHealth;
@@ -57,6 +60,11 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if(damageImunityTime>0)
+        {
+            return;
+        }
+        damageImunityTime = 0.5f;
         if ((dodgeChance + (luck / 2)) >= UnityEngine.Random.Range(0, 100)) // Dodge
             return;
         if (armor >= damage) // Armor blocked all the damage
@@ -92,7 +100,6 @@ public class Health : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-            TakeDamage(10);
+        damageImunityTime -= Time.deltaTime;
     }
 }
