@@ -106,8 +106,13 @@ MonoBehaviour:
   m_fadeTime: 1.25
   m_TargetRange: 10
   m_DangerDistance: 3
+  m_blinkRate: 3
   m_ProjectilePrefab: {fileID: 5937176568730274169, guid: fed01c5760593824895cbdfda7a2b1dc, type: 3}
   m_FiringForce: 20
+  m_enemyType: 0
+  m_hitbox: {fileID: 0}
+  m_boulder: {fileID: 0}
+  m_blinkPoints: []
 --- !u!195 &7327875974173251146
 NavMeshAgent:
   m_ObjectHideFlags: 0
