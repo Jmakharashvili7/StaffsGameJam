@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23844858089336176}
   m_Layer: 0
   m_Name: SM_Bld_Pirates_Fountain_01
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
