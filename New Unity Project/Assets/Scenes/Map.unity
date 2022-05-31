@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -348,6 +352,10 @@ PrefabInstance:
       value: SM_Prop_Generic_Bridge_01 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -443,6 +451,10 @@ PrefabInstance:
     - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
@@ -2480,6 +2492,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 196
@@ -2746,6 +2762,10 @@ PrefabInstance:
     - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
@@ -3053,6 +3073,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -4933,6 +4957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 204
@@ -6340,6 +6368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 185
@@ -7335,6 +7367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 199
@@ -7640,6 +7676,10 @@ PrefabInstance:
     - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Generic_Bridge_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8435,6 +8475,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -9369,6 +9413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
       value: 189
@@ -9494,6 +9542,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -10625,6 +10677,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -14616,6 +14672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
       value: 203
@@ -15423,6 +15483,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -16771,6 +16835,10 @@ PrefabInstance:
     - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
@@ -18205,6 +18273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 207
@@ -19429,6 +19501,10 @@ PrefabInstance:
       value: SM_Prop_Generic_Bridge_01
       objectReference: {fileID: 0}
     - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1559694304780468, guid: cee8fda2c24b1ed4ab9dc1b0e1ef9661, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
@@ -20192,6 +20268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Prop_Samurai_Shrine_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1264291507251104, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4976116880164980, guid: bacab3461ec365841a2eb894ba83d2e5, type: 3}
       propertyPath: m_RootOrder
       value: 187
@@ -20322,6 +20402,10 @@ PrefabInstance:
     - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_Name
       value: SM_Bld_Knights_Flag_04 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1356781902428362, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4322980502907178, guid: 1b7e257c84a45994da5972eb95fec7ac, type: 3}
       propertyPath: m_RootOrder
