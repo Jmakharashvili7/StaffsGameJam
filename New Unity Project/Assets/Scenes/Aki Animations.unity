@@ -1173,13 +1173,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239509995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582033950}
   m_RootOrder: 61
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &239509997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,10 +1189,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 239509995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9928abeeeb3186a46afd2ab88c8b991e, type: 3}
+  m_Script: {fileID: 11500000, guid: b326e9ed175eae443a85405dedce924b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AxePrefab: {fileID: 4026015372108642104, guid: 22dbf9c7901a4ba478cf157f06988249, type: 3}
+  m_WeaponPrefab: {fileID: 4026015372108642104, guid: 22dbf9c7901a4ba478cf157f06988249, type: 3}
+  m_CoolDown: 2.5
 --- !u!1 &582033943 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6488544569652725973, guid: 5319ee98c166ee648a9696806b3cd4c1, type: 3}
@@ -1231,19 +1232,51 @@ MonoBehaviour:
   m_SaiLifetime: 2
   m_SaiCooldown: 0.25
   m_SaiThrowForce: 20
---- !u!114 &582033953
+--- !u!1 &739356852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739356853}
+  - component: {fileID: 739356854}
+  m_Layer: 0
+  m_Name: Sword
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &739356853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739356852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 582033950}
+  m_RootOrder: 62
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &739356854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582033943}
+  m_GameObject: {fileID: 739356852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0525d80fc1aa324e9a0706bdbad1828, type: 3}
+  m_Script: {fileID: 11500000, guid: 488cde225d6e9ef4ba66b2ee61a775b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SwordPrefab: {fileID: 8793973903220141879, guid: e777cbd6aabb59141a9c9415405be238, type: 3}
+  m_WeaponPrefab: {fileID: 8793973903220141879, guid: e777cbd6aabb59141a9c9415405be238, type: 3}
+  m_CoolDown: 5
 --- !u!1 &944927041
 GameObject:
   m_ObjectHideFlags: 0
