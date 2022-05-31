@@ -41,22 +41,27 @@ public class SpawnScript : MonoBehaviour
     {
         m_spawnTimer += Time.deltaTime;
 
-        if (!m_waveOver)
+        Debug.Log(m_currentWave);
+
+        if (m_currentWave < m_EnemyCount.Length)
         {
-            if (m_spawnedObjects.Count < m_EnemyCount[m_currentWave])
+            if (!m_waveOver)
             {
-                if (m_spawnTimer >= m_spawnRate)
+                if (m_spawnedObjects.Count < m_EnemyCount[m_currentWave])
                 {
-                    int index = Random.Range(0, m_spawnPoints.Count);
-                    int enemyIndex = Random.Range(0, m_enemyPrefabs.Count);
-
-                    if (index < m_spawnPoints.Count && enemyIndex < m_enemyPrefabs.Count)
+                    if (m_spawnTimer >= m_spawnRate)
                     {
-                        GameObject temp = Instantiate(m_enemyPrefabs[enemyIndex], m_spawnPoints[index], Quaternion.identity);
-                        m_spawnedObjects.Add(temp);
-                    }
+                        int index = Random.Range(0, m_spawnPoints.Count);
+                        int enemyIndex = Random.Range(0, m_enemyPrefabs.Count);
 
-                    m_spawnTimer = 0.0f;
+                        if (index < m_spawnPoints.Count && enemyIndex < m_enemyPrefabs.Count)
+                        {
+                            GameObject temp = Instantiate(m_enemyPrefabs[enemyIndex], m_spawnPoints[index], Quaternion.identity);
+                            m_spawnedObjects.Add(temp);
+                        }
+
+                        m_spawnTimer = 0.0f;
+                    }
                 }
             }
         }
@@ -71,10 +76,9 @@ public class SpawnScript : MonoBehaviour
                 Destroy(m_spawnedObjects[i]);
             }
         }
+
         m_spawnedObjects.Clear();
         m_spawnedObjects = new List<GameObject>();
         m_currentWave++;
-
-        Debug.Log("test");
     }
 }
