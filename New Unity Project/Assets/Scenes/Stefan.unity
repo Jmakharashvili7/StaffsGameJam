@@ -8115,6 +8115,7 @@ MonoBehaviour:
   name: {fileID: 1590691118}
   icon: {fileID: 1286445407}
   bonus: {fileID: 1338486648}
+  player: {fileID: 0}
 --- !u!1 &1544312571
 GameObject:
   m_ObjectHideFlags: 0
@@ -9886,7 +9887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectPool: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 1086898582}
 --- !u!114 &1808255005
 MonoBehaviour:
   m_ObjectHideFlags: 0
