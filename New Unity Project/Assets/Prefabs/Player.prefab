@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RotateRate: 0.35
-  m_MoveSpeed: 10
+  m_MoveSpeed: 4
 --- !u!114 &5401967821343003546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
-  regenHealth: 0
+  regenHealth: 2
   armor: 0
   lifeSteal: 0
   maxMana: 10

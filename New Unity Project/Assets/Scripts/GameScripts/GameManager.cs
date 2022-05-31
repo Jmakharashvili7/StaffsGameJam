@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     ObjectPooler objectPool;
+    public Health player;
 
     private void Awake()
     {
