@@ -26,21 +26,28 @@ public class WaveManager : MonoBehaviour
     {
         m_currentWaveTimer += Time.deltaTime;
 
-        if (m_currentWaveTimer >= m_waveDuration[m_currentWave])
-        {
-            m_currentWave++;
+        Debug.Log(m_currentWave);
 
-            for (int i = 0; i < transform.childCount; i++)
+        if (m_currentWave < m_waveDuration.Length)
+        {
+            if (m_currentWaveTimer >= m_waveDuration[m_currentWave])
             {
-                transform.GetChild(i).GetComponent<SpawnScript>().ClearEnemies();
-                m_waveBossSpawned = false;
+                m_currentWave++;
+
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    transform.GetChild(i).GetComponent<SpawnScript>().ClearEnemies();
+                    m_waveBossSpawned = false;
+                }
+
+                m_currentWaveTimer = 0.0f;
             }
 
-            if (m_currentWaveTimer >= m_waveDuration[m_currentWave])
+            if (m_currentWaveTimer >= m_waveDuration[m_currentWave]/2)
             {
                 if (m_currentWave == 2 && !m_waveBossSpawned)
                 {
-                    GameObject tempRef = Instantiate(m_Elite, m_bossSpawn, Quaternion.identity);
+                    Instantiate(m_Elite, m_bossSpawn, Quaternion.identity);
                     m_waveBossSpawned = true;
                 }
                 else if (m_currentWave == 3 && !m_waveBossSpawned)
