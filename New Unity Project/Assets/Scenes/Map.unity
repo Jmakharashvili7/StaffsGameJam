@@ -17071,7 +17071,7 @@ MonoBehaviour:
   - 10
   m_Elite: {fileID: 1542892657898651740, guid: 2055a0327aa81234f949580fa4a897cb, type: 3}
   m_MiniBoss: {fileID: 7888704462931805780, guid: 3ece6614a91d3fa4baa57af96697952c, type: 3}
-  m_Boss: {fileID: 7888704462931805780, guid: d0157cc75ea36c44498c84bc8524b492, type: 3}
+  m_Boss: {fileID: 6852256410767800578, guid: 46b44eb31e2c7b24e92f808d91cf17f1, type: 3}
 --- !u!4 &1033492107
 Transform:
   m_ObjectHideFlags: 0
