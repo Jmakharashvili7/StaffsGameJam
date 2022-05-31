@@ -2,6 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+public enum ItemType
+{
+    Helmet,
+    Chestplate,
+    Leggings,
+    Boots,
+    Ring,
+    Belt,
+    Neck,
+    Weapon,
+    Spell
+}
+
+public enum Rarity
+{
+    Common,
+    Uncommon,
+    Rare,
+    Epic,
+    Legendary
+}
 
 [CreateAssetMenu(fileName = "New Item")]
 public class Item : ScriptableObject
@@ -10,6 +31,10 @@ public class Item : ScriptableObject
     [TextArea]
     public string bonus;
     public Sprite icon;
+
+    public ItemType itemType;
+    public Rarity rarity;
+
 
     [Header("Health")]
     public int maxHealth;

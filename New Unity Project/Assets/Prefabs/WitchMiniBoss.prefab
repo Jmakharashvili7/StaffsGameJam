@@ -3330,7 +3330,7 @@ GameObject:
   - component: {fileID: 3320810453478290253}
   m_Layer: 6
   m_Name: WitchMiniBoss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3344,7 +3344,7 @@ Transform:
   m_GameObject: {fileID: 7888704462931805780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.784718, y: 1.1005383, z: -2.8525143}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7886085426677562534}
   - {fileID: 7885717138668566538}
@@ -3455,6 +3455,7 @@ MonoBehaviour:
   m_enemyType: 2
   m_hitbox: {fileID: 8167971500860185778, guid: 902d9291fe1f73645b796f1ff7966593, type: 3}
   m_boulder: {fileID: 5937176568730274169, guid: 085ed51136472cc4ea126db8b46966e5, type: 3}
+  m_blinkPoints: []
 --- !u!195 &2939747116720854805
 NavMeshAgent:
   m_ObjectHideFlags: 0
