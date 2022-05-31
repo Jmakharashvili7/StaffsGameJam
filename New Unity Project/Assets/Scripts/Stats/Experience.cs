@@ -38,4 +38,5 @@ public class Experience : MonoBehaviour
         experience -= experienceRequired;
         experienceRequired += 200;
     }
+    public int getLevel() { return level; }
 }

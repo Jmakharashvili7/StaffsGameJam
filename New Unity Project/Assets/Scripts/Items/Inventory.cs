@@ -7,6 +7,8 @@ using TMPro;
 public class Inventory : MonoBehaviour
 {
     [SerializeField]
+    GameObject inventoryWindow;
+    [SerializeField]
     List<CreatedItem> items;
     [SerializeField]
     ItemSlot currentItemSlot;
@@ -99,6 +101,7 @@ public class Inventory : MonoBehaviour
         if (currentItemSlot.item == null && item!=null)
         {
             currentItemSlot.UpdateItem(item);
+                    inventoryWindow.SetActive(false);
         }
         else
         {
@@ -123,8 +126,11 @@ public class Inventory : MonoBehaviour
 
     public void UpdateItem(bool e)
     {
-        if(e)
+        if (e)
+        {
             currentItemSlot.UpdateItem(item);
+        }
+        inventoryWindow.SetActive(false);
         windowChange.SetActive(false);
     }
 }

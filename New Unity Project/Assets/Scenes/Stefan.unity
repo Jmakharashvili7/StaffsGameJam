@@ -461,7 +461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &71868950
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4485,7 +4485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &870063200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8808,7 +8808,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172421082a53d0b4bbae03f0b3a32b11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: e1acdf81d8e869f4792e980447412da7, type: 2}
+  item: {fileID: 0}
+  commonItems:
+  - {fileID: 11400000, guid: 040ca2723b75dfc4d9f39eacccd8579a, type: 2}
+  - {fileID: 11400000, guid: e1acdf81d8e869f4792e980447412da7, type: 2}
+  uncommonItems: []
+  rareItems: []
+  epicItems: []
+  legendaryItems: []
   name: {fileID: 1590691118}
   icon: {fileID: 1286445407}
   bonus: {fileID: 1338486648}
@@ -10973,6 +10980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56185eb87e5bf046a14e80461edac8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryWindow: {fileID: 870063199}
   items:
   - {fileID: 1506326175}
   currentItemSlot: {fileID: 0}

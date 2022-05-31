@@ -13,8 +13,24 @@ public class ItemArgs : EventArgs
 public class CreatedItem : MonoBehaviour
 {
     public event EventHandler<ItemArgs> OnItemTake;
+    [Header("List Of items")]
     [SerializeField]
     Item item;
+    [Header("Common")]
+    [SerializeField]
+    List<Item> commonItems;
+    [Header("Uncommon")]
+    [SerializeField]
+    List<Item> uncommonItems;
+    [Header("Rare")]
+    [SerializeField]
+    List<Item> rareItems;
+    [Header("Epic")]
+    [SerializeField]
+    List<Item> epicItems;
+    [Header("Legendary")]
+    [SerializeField]
+    List<Item> legendaryItems;
     [SerializeField]
     TMP_Text name;
     [SerializeField]
@@ -33,6 +49,34 @@ public class CreatedItem : MonoBehaviour
 
     private void OnEnable()
     {
+        PickRandomItems();
+    }
+
+    void PickRandomItems()
+    {
+        int level = GameManager.Instance.player.GetComponent<Experience>().getLevel();
+        int rarity = UnityEngine.Random.Range((0 + (level * 2)), (12 + level));
+
+        if (rarity <= 4)
+        {
+            item = commonItems[UnityEngine.Random.Range(0, commonItems.Count)];
+        }
+        else if (rarity > 4 && rarity <= 8)
+        {
+            item = uncommonItems[UnityEngine.Random.Range(0, uncommonItems.Count)];
+        }
+        else if (rarity>8 && rarity <=11)
+        {
+            item = rareItems[UnityEngine.Random.Range(0, rareItems.Count)];
+        }
+        else if(rarity > 11 && rarity <=13)
+        {
+            item = epicItems[UnityEngine.Random.Range(0, epicItems.Count)];
+        }
+        else
+        {
+            item = legendaryItems[UnityEngine.Random.Range(0, legendaryItems.Count)];
+        }
         UpdateItemUI();
     }
 
