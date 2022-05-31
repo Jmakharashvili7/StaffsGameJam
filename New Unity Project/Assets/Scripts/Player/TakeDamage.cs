@@ -20,7 +20,7 @@ public class TakeDamage : MonoBehaviour
         CanTakeDamage = true;
     }
 
-    void DamageTaken()
+    public void DamageTaken()
     {
         health -= 20.0f;
         if(health < 0)
