@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ChaseState : MeleeEnemyState
 {
+    float m_attackTimer;
+    float m_cooldown;
+    float m_cooldownTimer = 1.0f;
+
     public ChaseState(MeleeEnemy enemy)
     {
         m_Enemy = enemy;
@@ -12,11 +16,25 @@ public class ChaseState : MeleeEnemyState
 
     public override void Update()
     {
+        m_attackTimer += Time.deltaTime;
+        m_Enemy.transform.LookAt(m_player.transform.position);
+
         if (Vector3.Distance(m_Enemy.transform.position, m_player.transform.position) <= m_Enemy.AttackRange)
         {
-            m_Enemy.m_state = new MeleeAttackState(m_Enemy);
+            if (m_attackTimer >= m_Enemy.AttackRate)
+            {
+                m_Enemy.StopMoving();
+                m_Enemy.Attack();
+                m_attackTimer = 0.0f;
+                m_cooldown = 0.0f;
+            }
         }
-
-        m_Enemy.SetDestination(m_player.transform.position);
+        else
+        {
+            if (m_cooldownTimer >= m_cooldown)
+            {
+                m_Enemy.SetDestination(m_player.transform.position);
+            }
+        }
     }
 }

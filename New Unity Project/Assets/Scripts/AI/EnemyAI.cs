@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 
+[SerializeField]
+public enum EnemyType
+{
+    NormalEnemy,
+    EliteEnemy,
+    Boss
+};
+
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] protected float m_health = 3;

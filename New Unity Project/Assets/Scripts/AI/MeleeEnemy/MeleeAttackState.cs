@@ -16,15 +16,17 @@ public class MeleeAttackState : MeleeEnemyState
     public override void Update()
     {
         // check if the enemy left range
-        if (Vector3.Distance(m_player.transform.position, m_Enemy.transform.position) >= m_Enemy.AttackRange)
+        if (Vector3.Distance(m_player.transform.position, Enemy.transform.position) >= Enemy.AttackRange)
         {
-            m_Enemy.State = new ChaseState(m_Enemy);
+            Enemy.State = new ChaseState(Enemy);
+            Debug.Log(Enemy.State.ToString());
         }
 
         m_attackTimer += Time.deltaTime;
-
-        if (m_attackTimer >= m_Enemy.AttackRate)
+        
+        if (m_attackTimer >= Enemy.AttackRate)
         {
+            Enemy.Attack();
             m_attackTimer = 0.0f;
         }
     }
