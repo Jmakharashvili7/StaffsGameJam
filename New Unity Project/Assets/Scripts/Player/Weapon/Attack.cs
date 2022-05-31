@@ -14,7 +14,9 @@ public class Attack : MonoBehaviour
 
     protected void Start()
     {
-        gameObject.SetActive(false);
+        m_Animatior = GetComponent<Animator>();
+        m_ResetTime = 1 / m_Animatior.speed * m_CoolDown;
+        WeaponAttack();
     }
 
     // Start is called before the first frame update

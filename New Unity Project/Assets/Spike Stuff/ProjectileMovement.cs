@@ -29,7 +29,7 @@ public class ProjectileMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag != "Weapon")
+        if (collision.gameObject.tag == "Enemy")
         {
             Debug.Log("Hit Something");
             speed = 0;
