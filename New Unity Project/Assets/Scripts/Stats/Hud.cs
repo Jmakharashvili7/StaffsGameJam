@@ -74,6 +74,8 @@ public class Hud : MonoBehaviour
 
     void UpdateHealth()
     {
+        if (player.currentHealth <= 0)
+            GameManager.Instance.GetComponent<LevelManager>().LoadScene("CreditsOn");
         currentHealthTxt.text = player.currentHealth.ToString();
         healthBar.fillAmount = (float)player.currentHealth / (float)player.maxHealth;
         StartCoroutine(HpBarDelay());
@@ -91,4 +93,5 @@ public class Hud : MonoBehaviour
         hpFill.startValue = healhtBarDelay.fillAmount;
         hpFill.timer = 0;
     }
+    
 }
