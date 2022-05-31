@@ -43,12 +43,15 @@ public class RangedAttackState : RangedEnemyState
                 float distToBlink = int.MaxValue;
                 int index = 0;
 
-                do
+                if (Enemy.m_blinkPoints != null)
                 {
-                    index = Random.Range(0, Enemy.m_blinkPoints.Count);
-                    distToBlink = Vector3.Distance(Enemy.transform.position, Enemy.m_blinkPoints[index]);
+                    do
+                    {
+                        index = Random.Range(0, Enemy.m_blinkPoints.Count);
+                        distToBlink = Vector3.Distance(Enemy.transform.position, Enemy.m_blinkPoints[index]);
+                    }
+                    while (distToBlink >= 15.0f && distToBlink <= 3.0f);
                 }
-                while (distToBlink >= 15.0f && distToBlink <= 3.0f);
 
                 Enemy.GetComponent<Rigidbody>().MovePosition(Enemy.m_blinkPoints[index]);
                 Enemy.transform.position = Enemy.m_blinkPoints[index];
