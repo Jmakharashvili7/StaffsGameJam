@@ -13,8 +13,7 @@ public class SwordSpin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_Animator = GetComponent<Animator>();
-        m_Cooldown = 1 / m_Animator.speed * 5.0f;
+        
         SwordAttack();
     }
 
