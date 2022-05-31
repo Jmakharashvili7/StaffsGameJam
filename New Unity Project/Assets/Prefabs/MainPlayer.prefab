@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee0fdcf790817c4b957bc1279e001ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
-  regenHealth: 2
+  maxHealth: 100
+  regenHealth: 5
   armor: 0
   lifeSteal: 0
   maxMana: 10
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WeaponPrefab: {fileID: 4026015372108642104, guid: 22dbf9c7901a4ba478cf157f06988249, type: 3}
-  m_CoolDown: 2.5
+  m_CoolDown: 1.6
 --- !u!1 &8247090322104828176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,4 +1535,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WeaponPrefab: {fileID: 8793973903220141879, guid: e777cbd6aabb59141a9c9415405be238, type: 3}
-  m_CoolDown: 2
+  m_CoolDown: 1

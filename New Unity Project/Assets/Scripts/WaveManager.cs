@@ -26,8 +26,6 @@ public class WaveManager : MonoBehaviour
     {
         m_currentWaveTimer += Time.deltaTime;
 
-        Debug.Log(m_currentWave);
-
         if (m_currentWave < m_waveDuration.Length)
         {
             if (m_currentWaveTimer >= m_waveDuration[m_currentWave])

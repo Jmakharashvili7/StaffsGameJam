@@ -33,6 +33,7 @@ public class Experience : MonoBehaviour
     }    
     void LevelUp()
     {
+        GameManager.Instance.GetComponent<Inventory>().inventoryWindow.SetActive(true);
         level++;
         levelText.text = level.ToString();
         experience -= experienceRequired;

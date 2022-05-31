@@ -54,29 +54,7 @@ public class CreatedItem : MonoBehaviour
 
     void PickRandomItems()
     {
-        int level = GameManager.Instance.player.GetComponent<Experience>().getLevel();
-        int rarity = UnityEngine.Random.Range((0 + (level * 2)), (12 + level));
-
-        if (rarity <= 4)
-        {
-            item = commonItems[UnityEngine.Random.Range(0, commonItems.Count)];
-        }
-        else if (rarity > 4 && rarity <= 8)
-        {
-            item = uncommonItems[UnityEngine.Random.Range(0, uncommonItems.Count)];
-        }
-        else if (rarity>8 && rarity <=11)
-        {
-            item = rareItems[UnityEngine.Random.Range(0, rareItems.Count)];
-        }
-        else if(rarity > 11 && rarity <=13)
-        {
-            item = epicItems[UnityEngine.Random.Range(0, epicItems.Count)];
-        }
-        else
-        {
-            item = legendaryItems[UnityEngine.Random.Range(0, legendaryItems.Count)];
-        }
+        item = commonItems[UnityEngine.Random.Range(0, commonItems.Count)];
         UpdateItemUI();
     }
 

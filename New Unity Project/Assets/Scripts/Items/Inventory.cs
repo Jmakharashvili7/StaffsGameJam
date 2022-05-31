@@ -6,7 +6,7 @@ using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField]
+    public
     GameObject inventoryWindow;
     [SerializeField]
     List<CreatedItem> items;
@@ -38,11 +38,19 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     List<ItemSlot> weaponSlots;
 
-    private void Start()
+    private void OnEnable()
     {
-        foreach(CreatedItem item in items)
+        foreach (CreatedItem item in items)
         {
             item.OnItemTake += Item_OnItemTake;
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (CreatedItem item in items)
+        {
+            item.OnItemTake -= Item_OnItemTake;
         }
     }
 

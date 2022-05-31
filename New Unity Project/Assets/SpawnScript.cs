@@ -41,8 +41,6 @@ public class SpawnScript : MonoBehaviour
     {
         m_spawnTimer += Time.deltaTime;
 
-        Debug.Log(m_currentWave);
-
         if (m_currentWave < m_EnemyCount.Length)
         {
             if (!m_waveOver)
