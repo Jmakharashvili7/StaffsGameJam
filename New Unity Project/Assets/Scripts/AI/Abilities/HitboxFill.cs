@@ -39,7 +39,7 @@ public class HitboxFill : MonoBehaviour
             {
                 if (m_player)
                 {
-                    // take damage
+                    m_player.GetComponent<TakeDamage>().DamageTaken();
                 }
             }
 

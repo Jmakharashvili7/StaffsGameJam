@@ -78,5 +78,10 @@ public class SpawnScript : MonoBehaviour
         m_spawnedObjects.Clear();
         m_spawnedObjects = new List<GameObject>();
         m_currentWave++;
+
+        if (m_spawnRate > 0.25f)
+        {
+            m_spawnRate -= 0.25f;
+        }
     }
 }
