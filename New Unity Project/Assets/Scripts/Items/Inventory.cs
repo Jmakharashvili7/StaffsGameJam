@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Inventory : MonoBehaviour
@@ -11,6 +12,8 @@ public class Inventory : MonoBehaviour
     ItemSlot currentItemSlot;
     [SerializeField]
     GameObject windowChange;
+    [SerializeField]
+    GameObject weaponWarning;
     [SerializeField]
     Item item;
     //Really Bad Impementation, but I'm lazy
@@ -28,7 +31,10 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     ItemSlot ringSlot;
     [SerializeField]
-    ItemSlot neckSlot; 
+    ItemSlot neckSlot;
+    [Header("Weapons")]
+    [SerializeField]
+    List<ItemSlot> weaponSlots;
 
     private void Start()
     {
@@ -69,22 +75,42 @@ public class Inventory : MonoBehaviour
             case ItemType.Belt:
                 CheckForCurrentItem(beltSlot);
                 break;
+            case ItemType.Weapon:
+                WeaponCheck();
+                break;
             default:
                 break;
         }
+    }
 
+    public void TakeWeapon(int n)
+    {
+        CheckForCurrentItem(weaponSlots[n]);
+        weaponWarning.SetActive(false);
+        foreach (ItemSlot slot in weaponSlots)
+        {
+            slot.GetComponent<Button>().enabled = false;
+        }
     }
 
     void CheckForCurrentItem(ItemSlot currentSlot)
     {
         currentItemSlot = currentSlot;
-        if (currentItemSlot.item == null)
+        if (currentItemSlot.item == null && item!=null)
         {
             currentItemSlot.UpdateItem(item);
         }
         else
         {
             WindowChangeEnable();
+        }
+    }
+    void WeaponCheck()
+    {
+        weaponWarning.SetActive(true);
+        foreach (ItemSlot slot in weaponSlots)
+        {
+            slot.GetComponent<Button>().enabled = true;
         }
     }
 
