@@ -11,10 +11,16 @@ public class DamageEnemy : MonoBehaviour
             Destroy(collision.gameObject);
         }
         
-        if(collision.gameObject.tag == "Boss")
+        if(collision.gameObject.tag == "MeleeBoss")
         {
-            --collision.gameObject.GetComponent<EnemyAI>().Health;
-            Debug.Log(collision.gameObject.GetComponent<EnemyAI>().Health.ToString());
+ 
+            collision.gameObject.GetComponent<MeleeEnemy>().Health -= 1;
+            Debug.Log("Boss Health: " + collision.gameObject.GetComponent<EnemyAI>().Health.ToString());
+        }
+        else if(collision.gameObject.tag == "RangedBoss")
+        {
+            collision.gameObject.GetComponent<RangedEnemyAI>().Health -= 1;
+            Debug.Log("Boss Health " + collision.gameObject.GetComponent<EnemyAI>().Health.ToString());
         }
     }
 }
