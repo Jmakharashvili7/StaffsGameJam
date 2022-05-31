@@ -17,7 +17,6 @@ public class ChaseState : MeleeEnemyState
     public override void Update()
     {
         m_attackTimer += Time.deltaTime;
-        m_Enemy.transform.LookAt(m_player.transform.position);
 
         if (Vector3.Distance(m_Enemy.transform.position, m_player.transform.position) <= m_Enemy.AttackRange)
         {
@@ -33,6 +32,7 @@ public class ChaseState : MeleeEnemyState
         {
             if (m_cooldownTimer >= m_cooldown)
             {
+                m_Enemy.transform.LookAt(m_player.transform.position);
                 m_Enemy.SetDestination(m_player.transform.position);
             }
         }
