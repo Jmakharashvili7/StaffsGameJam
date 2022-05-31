@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField]
+    GameObject inventoryWindow;
     [SerializeField]
     List<CreatedItem> items;
     [SerializeField]
     ItemSlot currentItemSlot;
     [SerializeField]
     GameObject windowChange;
+    [SerializeField]
+    GameObject weaponWarning;
     [SerializeField]
     Item item;
     //Really Bad Impementation, but I'm lazy
@@ -28,7 +33,10 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     ItemSlot ringSlot;
     [SerializeField]
-    ItemSlot neckSlot; 
+    ItemSlot neckSlot;
+    [Header("Weapons")]
+    [SerializeField]
+    List<ItemSlot> weaponSlots;
 
     private void Start()
     {
@@ -69,22 +77,43 @@ public class Inventory : MonoBehaviour
             case ItemType.Belt:
                 CheckForCurrentItem(beltSlot);
                 break;
+            case ItemType.Weapon:
+                WeaponCheck();
+                break;
             default:
                 break;
         }
+    }
 
+    public void TakeWeapon(int n)
+    {
+        CheckForCurrentItem(weaponSlots[n]);
+        weaponWarning.SetActive(false);
+        foreach (ItemSlot slot in weaponSlots)
+        {
+            slot.GetComponent<Button>().enabled = false;
+        }
     }
 
     void CheckForCurrentItem(ItemSlot currentSlot)
     {
         currentItemSlot = currentSlot;
-        if (currentItemSlot.item == null)
+        if (currentItemSlot.item == null && item!=null)
         {
             currentItemSlot.UpdateItem(item);
+                    inventoryWindow.SetActive(false);
         }
         else
         {
             WindowChangeEnable();
+        }
+    }
+    void WeaponCheck()
+    {
+        weaponWarning.SetActive(true);
+        foreach (ItemSlot slot in weaponSlots)
+        {
+            slot.GetComponent<Button>().enabled = true;
         }
     }
 
@@ -97,8 +126,11 @@ public class Inventory : MonoBehaviour
 
     public void UpdateItem(bool e)
     {
-        if(e)
+        if (e)
+        {
             currentItemSlot.UpdateItem(item);
+        }
+        inventoryWindow.SetActive(false);
         windowChange.SetActive(false);
     }
 }
