@@ -1,11 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+public class ItemArgs : EventArgs
+{
+    public Item item;
+}
+
 public class CreatedItem : MonoBehaviour
 {
+    public event EventHandler<ItemArgs> OnItemTake;
     [SerializeField]
     Item item;
     [SerializeField]
@@ -14,19 +21,16 @@ public class CreatedItem : MonoBehaviour
     Image icon;
     [SerializeField]
     TMP_Text bonus;
-
     [SerializeField]
-    Stats player;
-    private void Start()
-    {
-        player = GameManager.Instance.player;
-    }
+    ItemType itemtype;
+
     public void TakeItem()
     {
-        player.UpdateHealthValues(item.maxHealth, item.regenHealth,item.armor, item.lifeSteal);
-        player.UpdateManaValues(item.maxMana, item.regenMana, item.ablityDamage);
-        player.UpdateDamageValues(item.attackDamage, item.attackSpeed, item.critChance, item.critDamage);
-        player.UpdateUtilityValues(item.movementSpeed, item.dodgeChance, item.luck);
+        ItemArgs itemArgs = new ItemArgs();
+        itemArgs.item = item;
+
+        if (OnItemTake != null)
+            OnItemTake(this, itemArgs);
     }
 
     private void OnEnable()
@@ -39,5 +43,6 @@ public class CreatedItem : MonoBehaviour
         name.text = item.name;
         icon.sprite = item.icon;
         bonus.text = item.bonus;
+        itemtype = item.itemType;
     }
 }

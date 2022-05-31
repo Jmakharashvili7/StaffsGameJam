@@ -2,6 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+public enum ItemType
+{
+    Helmet,
+    Chestplate,
+    Leggings,
+    Boots,
+    Bracelet,
+    Belt,
+    Shoulder,
+    Weapon,
+    Spell
+}
 
 [CreateAssetMenu(fileName = "New Item")]
 public class Item : ScriptableObject
@@ -10,6 +22,9 @@ public class Item : ScriptableObject
     [TextArea]
     public string bonus;
     public Sprite icon;
+
+    public ItemType itemType;
+
 
     [Header("Health")]
     public int maxHealth;

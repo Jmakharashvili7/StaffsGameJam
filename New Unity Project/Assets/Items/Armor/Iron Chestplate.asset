@@ -19,6 +19,7 @@ MonoBehaviour:
 
     +2 Armor'
   icon: {fileID: 21300000, guid: f4c250d3191050c4aa1166e18a494498, type: 3}
+  itemType: 1
   maxHealth: 10
   regenHealth: 2
   armor: 2
