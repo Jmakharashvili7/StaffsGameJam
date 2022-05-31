@@ -90,4 +90,9 @@ public class Health : MonoBehaviour
 
         StartCoroutine(C_RegenHealth());
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+            TakeDamage(10);
+    }
 }
