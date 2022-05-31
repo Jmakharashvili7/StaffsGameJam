@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   fireRate: 2
-  hitPrefab: {fileID: 0}
+  hitPrefab: {fileID: 7786598246337884606, guid: b1e731022b267b7418ddc43e1ccc3ac1, type: 3}
 --- !u!1 &5621555389487234154
 GameObject:
   m_ObjectHideFlags: 0
