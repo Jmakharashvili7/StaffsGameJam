@@ -4,41 +4,40 @@ using UnityEngine;
 
 public class SwingAxe : MonoBehaviour
 {
+    [SerializeField] GameObject m_AxePrefab;
+    GameObject m_AxeInstance;
+
     Animator m_Animator;
 
-    Quaternion PlayRotation;
-
-    bool m_IsPlaying;
+    float m_Cooldown;
 
     // Start is called before the first frame update
     void Start()
     {
         m_Animator = GetComponent<Animator>();
+        m_Cooldown = 1 / m_Animator.speed * 2;
+        AxeAttack();
     }
 
-    private void OnEnable()
+    private void Update()
     {
-        PlayRotation = transform.parent.transform.rotation;
+        if(m_AxeInstance)
+        {
+            m_AxeInstance.transform.position = transform.position;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void AxeAttack()
     {
-        transform.rotation = PlayRotation;
+        m_AxeInstance = Instantiate(m_AxePrefab, transform);
+        m_AxeInstance.transform.SetParent(null);
+        m_AxeInstance.transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y - 180, transform.rotation.z);
+        StartCoroutine(ResetAttack());
     }
 
-    IEnumerator AxeCooldown()
+    IEnumerator ResetAttack()
     {
-        m_Animator.enabled = false;
-        transform.GetChild(0).gameObject.SetActive(false);
-
-        yield return new WaitForSeconds(1.0f);
-
-        m_Animator.enabled = true;
-        PlayRotation = transform.parent.transform.rotation;
-        transform.GetChild(0).gameObject.SetActive(true);
+        yield return new WaitForSeconds(m_Cooldown);
+        AxeAttack();
     }
-
-
-
 }
