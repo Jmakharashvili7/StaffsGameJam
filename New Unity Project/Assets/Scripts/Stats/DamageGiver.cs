@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Stats))]
-public class Damage : MonoBehaviour
+public class DamageGiver : MonoBehaviour
 {
     [SerializeField]
     Stats stats;
