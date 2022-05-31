@@ -26,9 +26,9 @@ public class Experience : MonoBehaviour
     public void AddExperience(int amount)
     {
         experience += amount;
-        while (experience > experienceRequired)
+        while (experience >= experienceRequired)
             LevelUp();
-        experienceBar.fillAmount = (experience / experienceRequired)*0.75f;
+        experienceBar.fillAmount = ((float)experience / (float)experienceRequired)*0.75f;
 
     }    
     void LevelUp()

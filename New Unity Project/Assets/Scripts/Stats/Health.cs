@@ -17,15 +17,6 @@ public class Health : MonoBehaviour
     public int dodgeChance;
     public int luck;
 
-    private void Start()
-    {
-        stats = GetComponent<Stats>();
-        stats.OnUpdateHealthValues += Stats_OnUpdateHealthValues;
-        stats.OnUpdateUtilityValues += Stats_OnUpdateUtilityValues;
-        stats.Refresh();
-        StartCoroutine(C_RegenHealth());
-    }
-
     private void Stats_OnUpdateUtilityValues(object sender, EventArgs e)
     {
         UpdateValues();
@@ -38,9 +29,17 @@ public class Health : MonoBehaviour
 
     private void OnEnable()
     {
-        UpdateValues();
-        StopAllCoroutines();
+        stats = GetComponent<Stats>();
+        stats.OnUpdateHealthValues += Stats_OnUpdateHealthValues;
+        stats.OnUpdateUtilityValues += Stats_OnUpdateUtilityValues;
+        stats.Refresh();
         StartCoroutine(C_RegenHealth());
+    }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        stats.OnUpdateHealthValues -= Stats_OnUpdateHealthValues;
+        stats.OnUpdateUtilityValues -= Stats_OnUpdateUtilityValues;
     }
 
     public void UpdateValues()
@@ -86,17 +85,9 @@ public class Health : MonoBehaviour
 
     IEnumerator C_RegenHealth()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         Heal(regenHealth);
 
         StartCoroutine(C_RegenHealth());
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            TakeDamage(5);
-        }
     }
 }

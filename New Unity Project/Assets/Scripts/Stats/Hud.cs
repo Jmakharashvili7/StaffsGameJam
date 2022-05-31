@@ -4,6 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+class FillValues
+{
+    public float curentValue = 0;
+    public float startValue = 0;
+    public float timer = 0;
+}
+
+
 public class Hud : MonoBehaviour
 {
     [SerializeField]
@@ -21,6 +29,8 @@ public class Hud : MonoBehaviour
     [SerializeField]
     Image healthBar;
     [SerializeField]
+    Image healhtBarDelay;
+    [SerializeField]
     Image manaBar;
 
     [Header("Resources")]
@@ -35,12 +45,21 @@ public class Hud : MonoBehaviour
     [SerializeField]
     TMP_Text timeRemaining;
 
+    FillValues hpFill = new FillValues();
+    FillValues manaFill = new FillValues();
+
     private void Start()
     {
         player.OnUpdateHealth += Player_OnUpdateHealth;
         player.OnUpdateValues += Player_OnUpdateValues;
         player.UpdateValues();
         player.Heal(0);
+    }
+
+    private void Update()
+    {
+        hpFill.timer += Time.deltaTime * 3f;
+        healhtBarDelay.fillAmount = Mathf.Lerp(hpFill.startValue,hpFill.curentValue,hpFill.timer);
     }
 
     private void Player_OnUpdateValues(object sender, System.EventArgs e)
@@ -56,12 +75,20 @@ public class Hud : MonoBehaviour
     void UpdateHealth()
     {
         currentHealthTxt.text = player.currentHealth.ToString();
+        healthBar.fillAmount = (float)player.currentHealth / (float)player.maxHealth;
+        StartCoroutine(HpBarDelay());
     }
 
     void UpdateValues()
     {
         maxHealthTxt.text = player.maxHealth.ToString();
-
     }
 
+    IEnumerator HpBarDelay()
+    {
+        yield return new WaitForSeconds(.25f);
+        hpFill.curentValue = healthBar.fillAmount;
+        hpFill.startValue = healhtBarDelay.fillAmount;
+        hpFill.timer = 0;
+    }
 }
